@@ -32,3 +32,9 @@ keymap.set('n', '<C-w><left>', '<C-w><')
 keymap.set('n', '<C-w><right>', '<C-w>>')
 keymap.set('n', '<C-w><up>', '<C-w>+')
 keymap.set('n', '<C-w><down>', '<C-w>-')
+
+-- Prettier
+keymap.set('n', '<C-p>', ':Prettier<Enter>')
+
+-- Save
+keymap.set('n', '<C-s>', ':Prettier<Return>:w<Enter>')
