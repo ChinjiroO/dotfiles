@@ -25,6 +25,8 @@ set -gx PATH ~/.local/bin $PATH
 
 # NodeJS
 set -gx PATH node_modules/.bin $PATH
+set -gx LDFLAGS "-L/usr/local/opt/node@16/lib"
+set -gx CPPFLAGS "-I/usr/local/opt/node@16/include"
 
 # Go
 set -g GOPATH $HOME/go
@@ -55,5 +57,5 @@ if test -f $LOCAL_CONFIG
 end
 
 # Setting PATH for Python 3.10
-# The original version is saved in /Users/chinjiro/.config/fish/config.fish.pysave
 set -x PATH "/Library/Frameworks/Python.framework/Versions/3.10/bin" "$PATH"
+# set -x PATH "/usr/local/bin/python3" "$PATH"

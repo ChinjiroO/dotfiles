@@ -16,6 +16,7 @@ telescope.setup {
         ["q"] = actions.close
       },
     },
+    file_ignore_patterns = { "node_modules", ".next/.*", ".DS_Store", "bin/.*", "obj/.*" }
   },
   extensions = {
     file_browser = {

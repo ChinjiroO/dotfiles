@@ -37,6 +37,11 @@ keymap.set('n', '<C-w><down>', '<C-w>-')
 keymap.set('n', '<C-p>', ':Prettier<Enter>')
 
 -- Save
-keymap.set('n', '<C-s>', ':Prettier<Enter><Return>:w<Enter>')
+keymap.set('n', '<C-s>', ':w<Enter>')
+
+-- Copilot
+keymap.set('n', 'ce', ':Copilot enable<Enter>')
+keymap.set('n', 'cd', ':Copilot disable<Enter>')
+keymap.set('n', 'cp', ':Copilot panel<Enter>')
 
 keymap.set('n', 'tt', ':NvimTreeToggle<Enter>')

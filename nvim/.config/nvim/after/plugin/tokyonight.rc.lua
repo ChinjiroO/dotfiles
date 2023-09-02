@@ -1,7 +1,12 @@
-vim.g.tokyonight_style = "night"
-vim.g.tokyonight_italic_functions = true
-vim.g.tokyonight_transparent = true
-vim.g.tokyonight_transparent_sidebar = true
+local status, tokyo = pcall(require, "tokyonight")
+if (not status) then return end
+
+tokyo.setup({
+  transparent = true,
+  styles = {
+    comments = { italic = true },
+  },
+})
 
 vim.g.tokyonight_colors = {
   fg = "#839496",
@@ -23,4 +28,4 @@ vim.g.tokyonight_colors = {
   purple = "#6c71c4",
 }
 
-vim.cmd [[colorscheme tokyonight]]
+-- vim.cmd [[colorscheme tokyonight]]

@@ -22,6 +22,12 @@ cmp.setup({
     { name = 'nvim_lsp' },
     { name = 'buffer' },
   }),
+  enabled = function()
+    if vim.bo.buftype == 'csharp' then
+      return false
+    end
+    return true
+  end,
   formatting = {
     format = lspkind.cmp_format({ with_text = false, maxwidth = 50 })
   }
