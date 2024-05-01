@@ -1,3 +1,0 @@
-# sync clipboard
-set-option -g default-command "which reattach-to-user-namespace > /dev/null && reattach-to-user-namespace -l /opt/homebrew/bin/fish || $SHELL"
-#set-option -g default-command 'reattach-to-user-namespace-tmux -l "$SHELL"'

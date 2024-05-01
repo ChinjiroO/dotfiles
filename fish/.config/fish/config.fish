@@ -59,3 +59,4 @@ end
 # Setting PATH for Python 3.10
 set -x PATH "/Library/Frameworks/Python.framework/Versions/3.10/bin" "$PATH"
 # set -x PATH "/usr/local/bin/python3" "$PATH"
+alias pn "pnpm" #pnpm
