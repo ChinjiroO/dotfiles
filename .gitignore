@@ -24,6 +24,7 @@ Gemfile.lock
 node_modules
 bower_components
 fishd.*
+.gitconfig.local
 
 # Vim
 Session.vim
@@ -62,5 +63,5 @@ DerivedData
 Pods/
 
 # Fish local config
-.config/fish/config-local.fish
-.config/fish/fish_variables.x86_64
+fish/.config/fish/config-local.fish
+fish/.config/fish/fish_variables.x86_64
